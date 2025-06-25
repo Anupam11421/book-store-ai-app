@@ -53,39 +53,35 @@ An AI-powered Book Store Management desktop application built using **Python (Tk
 ---
 
 ## 📦 How to Run Locally
-
 ```bash
 git clone https://github.com/Anupam11421/book-store-ai-app.git
 cd book-store-ai-app
 pip install -r requirements.txt
 python frontend.py
+```
 
 💡 Future Improvements (Planned)
-   🎨 Improve GUI with ttkbootstrap or custom themes
+🎨 Improve GUI with ttkbootstrap or custom themes
 
-   📤 Export data as PDF/CSV
+📤 Export data as PDF/CSV
 
-   🧾 OCR to auto-fill book titles from images
+🧾 OCR to auto-fill book titles from images
 
-   🌐 Deploy using PyInstaller or exe builder
+🌐 Deploy using PyInstaller or exe builder
+
 
 🙋 About Me
 👨‍💻 Author: Anupam Tiwari
 📬 Email: tiwarianupam11421@gmail.com
 🧠 Passionate about AI, Python & building useful tools
 
-## 💬 DM Me On
+💬 DM Me On
 
-DM me on:
-- [LinkedIn](https://www.linkedin.com/in/anupam-tiwari-08607b281/)
-- [GitHub](https://github.com/Anupam11421)
+🔗 [LinkedIn](https://www.linkedin.com/in/anupam-tiwari-08607b281/)
+🧑‍💻 [GitHub](https://github.com/Anupam11421)
 
 Let’s cook something epic 👨‍🍳🔥
 
 ⭐ Support & Contribution
 If you like this project, please give it a ⭐
 Open to contributions, suggestions, and improvements!
-
-
-
-
