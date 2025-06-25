@@ -16,7 +16,7 @@ An AI-powered Book Store Management desktop application built using **Python (Tk
 ---
 
 ## ✨ Features
-'''
+
 
 | Feature              | Description |
 |----------------------|-------------|
@@ -27,7 +27,7 @@ An AI-powered Book Store Management desktop application built using **Python (Tk
 | 💾 SQLite Backend     | Persistent local data storage |
 | 🖼 Screenshot Ready    | Included below |
 
-'''
+
 ---
 
 ## 📷 Screenshots
