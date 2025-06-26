@@ -1,3 +1,4 @@
 *.py linguist-detectable=true
 *.md linguist-detectable=false
 README.md linguist-language=Markdown
+build/frontend/** linguist-detectable=false
