@@ -3,7 +3,9 @@ import requests
 import os
 from dotenv import load_dotenv
 
-load_dotenv()  # 🟢 Load variables from .env
+# 🔐 Load the API key from .env
+env_path = os.path.join(os.path.dirname(__file__), '.env')
+load_dotenv(dotenv_path=env_path)
 
 API_KEY = os.getenv("OPENROUTER_API_KEY")
 
@@ -20,14 +22,35 @@ def get_recommendation():
     if not books:
         return "No books found in your library."
 
+    # 🧠 Prompt for AI model
     prompt = "Based on these books, recommend 5 similar books:\n"
     for title, author in books:
         prompt += f"- {title} by {author}\n"
 
     headers = {
-        "Authorization": f"Bearer {API_KEY}",
-        "Content-Type": "application/json"
+    "HTTP-Referer": "https://github.com/Anupam11421/book-store-ai-app",  # <-- Required
+    "Authorization": f"Bearer {API_KEY}",
+    "Content-Type": "application/json"
     }
+
+    headers = {
+    "HTTP-Referer": "https://github.com/Anupam11421/book-store-ai-app",  # <-- Required
+    "Authorization": f"Bearer {API_KEY}",
+    "Content-Type": "application/json"
+    }
+
+    headers = {
+    "HTTP-Referer": "https://github.com/Anupam11421/book-store-ai-app",  # <-- Required
+    "Authorization": f"Bearer {API_KEY}",
+    "Content-Type": "application/json"
+    }
+
+    headers = {
+    "HTTP-Referer": "https://github.com/Anupam11421/book-store-ai-app",  # <-- Required
+    "Authorization": f"Bearer {API_KEY}",
+    "Content-Type": "application/json"
+    }
+
 
     body = {
         "model": "mistralai/mistral-7b-instruct",
@@ -41,7 +64,7 @@ def get_recommendation():
     )
 
     data = response.json()
-    print("DEBUG:", data)  # 🔍 Debug log
+    print("DEBUG:", data)  # Remove this after testing
 
     if "choices" in data:
         return data["choices"][0]["message"]["content"]
